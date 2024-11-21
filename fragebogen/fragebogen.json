@@ -1,0 +1,272 @@
+{
+    "questionnaires": [
+      {
+        "id": 1,
+        "title": "Beck-Depressions-Inventar II (BDI-II)",
+        "description": "Selbstbeurteilungsfragebogen zur Erfassung des Schweregrades depressiver Symptome. Dieser Fragebogen enthält 21 Gruppen von Aussagen. Bitte lesen Sie jede dieser Gruppen von Aussagen sorgfältig durch und suchen Sie sich dann in jeder Gruppe eine Aussage heraus, die am besten beschreibt, wie Sie sich in den letzten zwei Wochen, einschließlich heute, gefühlt haben. ",
+        "questions": [
+          {
+            "id": 1,
+            "text": "Traurigkeit",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich bin nicht traurig.", "score": 0 },
+              { "text": "Ich bin oft traurig.", "score": 1 },
+              { "text": "Ich bin ständig traurig.", "score": 2 },
+              { "text": "Ich bin so traurig oder unglücklich, dass ich es nicht aushalte.", "score": 3 }
+            ]
+          },
+          {
+            "id": 2,
+            "text": "Pessimismus",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich sehe nicht mutlos in die Zukunft.", "score": 0 },
+              { "text": "Ich sehe mutloser in die Zukunft als sonst.", "score": 1 },
+              { "text": "Ich bin mutlos und erwarte nicht, dass meine Situation besser wird.", "score": 2 },
+              { "text": "Ich glaube, dass meine Zukunft hoffnungslos ist und nur noch schlechter wird.", "score": 3 }
+            ]
+          },
+          {
+            "id": 3,
+            "text": "Versagensgefühle",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich fühle mich nicht als Versager.", "score": 0 },
+              { "text": "Ich habe häufiger Versagensgefühle.", "score": 1 },
+              { "text": "Wenn ich zurückblicke, sehe ich eine Menge Fehlschläge.", "score": 2 },
+              { "text": "Ich habe das Gefühl, als Mensch ein völliger Versager zu sein.", "score": 3 }
+            ]
+          },
+          {
+            "id": 4,
+            "text": "Verlust von Freude",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich kann die Dinge genauso gut genießen wie früher.", "score": 0 },
+              { "text": "Ich kann die Dinge nicht mehr so genießen wie früher.", "score": 1 },
+              { "text": "Dinge, die mir früher Freude gemacht haben, kann ich kaum mehr genießen.", "score": 2 },
+              { "text": "Dinge, die mir früher Freude gemacht haben, kann ich überhaupt nicht mehr genießen.", "score": 3 }
+            ]
+          },
+          {
+            "id": 5,
+            "text": "Schuldgefühle",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich habe keine besonderen Schuldgefühle.", "score": 0 },
+              { "text": "Ich habe oft Schuldgefühle wegen Dingen, die ich getan habe oder hätte tun sollen.", "score": 1 },
+              { "text": "Ich habe die meiste Zeit Schuldgefühle.", "score": 2 },
+              { "text": "Ich habe ständig Schuldgefühle.", "score": 3 }
+            ]
+          },
+          {
+            "id": 6,
+            "text": "Bestrafungsgefühle",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich habe nicht das Gefühl, für etwas bestraft zu sein.", "score": 0 },
+              { "text": "Ich habe das Gefühl, vielleicht bestraft zu werden.", "score": 1 },
+              { "text": "Ich erwarte, bestraft zu werden.", "score": 2 },
+              { "text": "Ich habe das Gefühl, bestraft zu sein.", "score": 3 }
+            ]
+          },
+          {
+            "id": 7,
+            "text": "Selbstablehnung",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich halte von mir genauso viel wie immer.", "score": 0 },
+              { "text": "Ich habe Vertrauen in mich verloren.", "score": 1 },
+              { "text": "Ich bin von mir enttäuscht.", "score": 2 },
+              { "text": "Ich lehne mich völlig ab.", "score": 3 }
+            ]
+          },
+          {
+            "id": 8,
+            "text": "Selbstvorwürfe",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich kritisiere oder tadle mich nicht mehr als sonst.", "score": 0 },
+              { "text": "Ich bin mir gegenüber kritischer als sonst.", "score": 1 },
+              { "text": "Ich kritisiere mich für all meine Mängel.", "score": 2 },
+              { "text": "Ich gebe mir die Schuld für alles Schlimme, was passiert ist.", "score": 3 }
+            ]
+          },
+          {
+            "id": 9,
+            "text": "Selbstmordgedanken",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich denke nicht daran, mir etwas anzutun.", "score": 0 },
+              { "text": "Ich denke manchmal an Selbstmord, aber ich würde es nie tun.", "score": 1 },
+              { "text": "Ich möchte mich am liebsten umbringen.", "score": 2 },
+              { "text": "Ich würde mich umbringen, wenn ich die Gelegenheit dazu hätte.", "score": 3 }
+            ]
+          },
+          {
+            "id": 10,
+            "text": "Weinen",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich weine nicht öfter als früher.", "score": 0 },
+              { "text": "Ich weine jetzt mehr als früher.", "score": 1 },
+              { "text": "Ich weine beim geringsten Anlass.", "score": 2 },
+              { "text": "Ich möchte gern weinen, aber ich kann nicht.", "score": 3 }
+            ]
+          },
+          {
+            "id": 11,
+            "text": "Unruhe",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich bin nicht unruhiger als sonst.", "score": 0 },
+              { "text": "Ich bin unruhiger als sonst.", "score": 1 },
+              { "text": "Ich bin so unruhig, dass es mir schwerfällt, still zu sitzen.", "score": 2 },
+              { "text": "Ich bin so unruhig, dass ich mich ständig bewegen oder etwas tun muss.", "score": 3 }
+            ]
+          },
+          {
+            "id": 11,
+            "text": "Unruhe",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich bin nicht unruhiger als sonst.", "score": 0 },
+              { "text": "Ich bin unruhiger als sonst.", "score": 1 },
+              { "text": "Ich bin so unruhig, dass es mir schwerfällt, still zu sitzen.", "score": 2 },
+              { "text": "Ich bin so unruhig, dass ich mich ständig bewegen oder etwas tun muss.", "score": 3 }
+            ]
+          },
+          {
+            "id": 11,
+            "text": "Unruhe",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich bin nicht unruhiger als sonst.", "score": 0 },
+              { "text": "Ich bin unruhiger als sonst.", "score": 1 },
+              { "text": "Ich bin so unruhig, dass es mir schwerfällt, still zu sitzen.", "score": 2 },
+              { "text": "Ich bin so unruhig, dass ich mich ständig bewegen oder etwas tun muss.", "score": 3 }
+            ]
+          },
+          {
+            "id": 12,
+            "text": "Interessenverlust",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich habe das Interesse an anderen Menschen oder an Tätigkeiten nicht verloren", "score": 0 },
+              { "text": "Ich habe weniger Interesse an anderen Menschen oder an Dingen als sonst", "score": 1 },
+              { "text": "Ich habe das Interesse an anderen Menschen oder Dingen zum größten Teil verloren", "score": 2 },
+              { "text": "Es fällt mir schwer, mich überhaupt für irgendetwas zu interessieren", "score": 3 }
+            ]
+          },
+          {
+            "id": 13,
+            "text": "Entschlussunfähigkeit",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich bin so entschlussfreudig wie immer", "score": 0 },
+              { "text": "Es fällt mir schwerer als sonst, Entscheidungen zu treffen", "score": 1 },
+              { "text": "Es fällt mir sehr viel schwerer als sonst, Entscheidungen zu treffen.", "score": 2 },
+              { "text": "Ich habe Mühe, überhaupt Entscheidungen zu treffen", "score": 3 }
+            ]
+          },
+          {
+            "id": 14,
+            "text": "Wertlosigkeit",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich fühle mich nicht wertlos", "score": 0 },
+              { "text": "Ich halte mich für weniger wertvoll und nützlich als sonst", "score": 1 },
+              { "text": "Verglichen mit anderen Menschen fühle ich mich viel weniger wert", "score": 2 },
+              { "text": "Ich fühle mich völlig wertlos", "score": 3 }
+            ]
+          },
+          {
+            "id": 15,
+            "text": "Energieverlust",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich habe so viel Energie wie immer", "score": 0 },
+              { "text": "Ich habe weniger Energie als sonst", "score": 1 },
+              { "text": "Ich habe so wenig Energie, dass ich kaum noch etwas schaffe", "score": 2 },
+              { "text": "Ich habe keine Energie mehr, um überhaupt noch etwas zu tun", "score": 3 }
+            ]
+          },
+          {
+            "id": 16,
+            "text": "Veränderungen der Schlafgewohnheiten",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Meine Schlafgewohnheiten haben sich nicht verändert", "score": 0 },
+              { "text": "Ich schlafe etwas mehr als sonst", "score": 1 },
+              { "text": "Ich schlafe etwas weniger als sonst", "score": 1 },
+              { "text": "Ich schlafe viel mehr als sonst", "score": 2 },
+              { "text": "Ich schlafe viel weniger als sonst", "score": 2 },
+              { "text": "Ich schlafe fast den ganzen Tag", "score": 3 },
+              { "text": "Ich wache 1-2 Stunden früher auf als gewöhnlich und kann dann nicht mehr einschlafen", "score": 3 }
+            ]
+          },
+          {
+            "id": 17,
+            "text": "Reizbarkeit",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich bin nicht reizbarer als sonst", "score": 0 },
+              { "text": "Ich bin reizbarer als sonst", "score": 1 },
+              { "text": "Ich bin viel Reizbarer als sonst", "score": 2 },
+              { "text": "Ich fühl e mich dauernd gereizt", "score": 3 }
+            ]
+          },
+          {
+            "id": 18,
+            "text": "Energieverlust",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Mein Appetit hat sich nicht verändert", "score": 0 },
+              { "text": "Mein Appetit ist etwas schlechter als sonst", "score": 1 },
+              { "text": "Mein Appetit ist etwas größer als sonst", "score": 1 },
+              { "text": "Mein Appetit ist viel schlechter als sonst", "score": 2 },
+              { "text": "Mein Appetit ist viel größer als sonst", "score": 2 },
+              { "text": "Ich habe überhaupt keinen Appetit", "score": 3 },
+              { "text": "Ich habe ständig Heißhunger", "score": 3 }
+            ]
+          },
+          {
+            "id": 19,
+            "text": "Konzentrationsschwierigkeiten",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich kann mich so gut konzentrieren wie immer", "score": 0 },
+              { "text": "Ich kann mich nicht mehr so gut konzentrieren wie sonst", "score": 1 },
+              { "text": "Es fällt mir schwer, mich längere Zeit auf irgendetwas zu konzentrieren", "score": 2 },
+              { "text": "Ich kann mich überhaupt nicht mehr konzentrieren", "score": 3 }
+            ]
+          },
+          {
+            "id": 20,
+            "text": "Ermüdung oder Erschöpfung",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Ich fühle mich nicht müder oder erschöpfter als sonst", "score": 0 },
+              { "text": "Ich werde schneller müde oder erschöpft als sonst", "score": 1 },
+              { "text": "Für viele Dinge, die ich üblicherweise tue, bin ich zu müde oder erschöpft", "score": 2 },
+              { "text": "Ich bin so müde und erschöpft, dass ich fast nichts mehr tun kann", "score": 3 }
+            ]
+          },
+          {
+            "id": 21,
+            "text": "Verlust an sexuellem Interesse",
+            "inputType": "radio",
+            "answers": [
+              { "text": "Mein Interesse an Sexualität hat sich in letzter Zeit nicht verändert", "score": 0 },
+              { "text": "Ich interessier mich weniger für Sexualität als früher", "score": 1 },
+              { "text": "Ich interessiere mich jetzt viel weniger für Sexualität", "score": 2 },
+              { "text": "Ich habe das Interesse an Sexualität völlig verloren", "score": 3 }
+            ]
+          }
+      ]
+    }
+    ]
+
+
+}
