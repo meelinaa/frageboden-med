@@ -2,8 +2,36 @@
     "questionnaires": [
       {
         "id": 1,
+        "theme": "Depression",
         "title": "Beck-Depressions-Inventar II (BDI-II)",
-        "description": "Selbstbeurteilungsfragebogen zur Erfassung des Schweregrades depressiver Symptome. Dieser Fragebogen enthält 21 Gruppen von Aussagen. Bitte lesen Sie jede dieser Gruppen von Aussagen sorgfältig durch und suchen Sie sich dann in jeder Gruppe eine Aussage heraus, die am besten beschreibt, wie Sie sich in den letzten zwei Wochen, einschließlich heute, gefühlt haben. ",
+        "description": "Selbstbeurteilungsfragebogen zur Erfassung des Schweregrades depressiver Symptome. Dieser Fragebogen enthält 21 Gruppen von Aussagen. Bitte lies jede dieser Gruppen von Aussagen sorgfältig durch und suche dir dann in jeder Gruppe eine Aussage heraus, die am besten beschreibt, wie du dich in den letzten zwei Wochen, einschließlich heute, gefühlt hast. Bitte beachte, dass dieser Test keine professionelle Diagnose ersetzen kann.",
+        "evaluation": [
+        {
+          "maxScore": 8,
+          "result": "Keine Depression",
+          "explanation": "Ihre Antworten zeigen keine signifikanten Symptome einer Depression. Es könnte jedoch hilfreich sein, achtsam zu bleiben, falls sich die Symptome in der Zukunft ändern."
+        },
+        {
+          "maxScore": 13,
+          "result": "Minimale Depression",
+          "explanation": "Ihre Antworten deuten auf erste Anzeichen einer Depression hin. Ein Gespräch mit einem Fachmann könnte Ihnen helfen, besser mit Ihren Gefühlen umzugehen."
+        },
+        {
+          "maxScore": 19,
+          "result": "Leichte Depression",
+          "explanation": "Es gibt deutliche Anzeichen einer leichten Depression. Eine frühzeitige Intervention, wie etwa Gesprächstherapie oder weitere Unterstützung, wird empfohlen."
+        },
+        {
+          "maxScore": 28,
+          "result": "Mittelschwere Depression",
+          "explanation": "Ihre Antworten zeigen eine mittelschwere Depression. Eine professionelle Behandlung wird dringend empfohlen, um Ihre Lebensqualität zu verbessern."
+        },
+        {
+          "maxScore": 100,
+          "result": "Schwere Depression",
+          "explanation": "Es scheint, dass Sie an einer schweren Depression leiden. Es ist sehr wichtig, sofort professionelle Hilfe in Anspruch zu nehmen, um Ihre Situation zu verbessern."
+        }
+        ],
         "questions": [
           {
             "id": 1,
@@ -127,28 +155,6 @@
             ]
           },
           {
-            "id": 11,
-            "text": "Unruhe",
-            "inputType": "radio",
-            "answers": [
-              { "text": "Ich bin nicht unruhiger als sonst.", "score": 0 },
-              { "text": "Ich bin unruhiger als sonst.", "score": 1 },
-              { "text": "Ich bin so unruhig, dass es mir schwerfällt, still zu sitzen.", "score": 2 },
-              { "text": "Ich bin so unruhig, dass ich mich ständig bewegen oder etwas tun muss.", "score": 3 }
-            ]
-          },
-          {
-            "id": 11,
-            "text": "Unruhe",
-            "inputType": "radio",
-            "answers": [
-              { "text": "Ich bin nicht unruhiger als sonst.", "score": 0 },
-              { "text": "Ich bin unruhiger als sonst.", "score": 1 },
-              { "text": "Ich bin so unruhig, dass es mir schwerfällt, still zu sitzen.", "score": 2 },
-              { "text": "Ich bin so unruhig, dass ich mich ständig bewegen oder etwas tun muss.", "score": 3 }
-            ]
-          },
-          {
             "id": 12,
             "text": "Interessenverlust",
             "inputType": "radio",
@@ -214,7 +220,7 @@
               { "text": "Ich bin nicht reizbarer als sonst", "score": 0 },
               { "text": "Ich bin reizbarer als sonst", "score": 1 },
               { "text": "Ich bin viel Reizbarer als sonst", "score": 2 },
-              { "text": "Ich fühl e mich dauernd gereizt", "score": 3 }
+              { "text": "Ich fühle mich dauernd gereizt", "score": 3 }
             ]
           },
           {
@@ -264,9 +270,186 @@
               { "text": "Ich habe das Interesse an Sexualität völlig verloren", "score": 3 }
             ]
           }
+        ]
+    },
+    {
+      "id": 2,
+      "theme": "ADHS",
+      "title": "ADHS Selbstbeurteilungs-Fragebogen (ASRS V1.1)",
+      "description": "Dies ist ein Fragebogen zur Selbstbeurteilung von Symptomen des Aufmerksamkeits-Defizit-Hyperaktivitäts-Syndroms (ADHS). Bitte lies jede Frage sorgfältig und beantworte sie basierend auf deinen Erfahrungen in den letzten sechs Monaten.",
+      "evaluation": [
+        {
+          "maxScore": 5,
+          "result": "Wahrscheinlich keine ADHS",
+          "explanation": "Basierend auf deinen Antworten scheint es, dass keine signifikanten Anzeichen von ADHS vorliegen. Es könnte jedoch hilfreich sein, deine Symptome weiterhin zu beobachten."
+        },
+        {
+          "maxScore": 10,
+          "result": "Mögliche ADHS",
+          "explanation": "Einige deiner Antworten deuten auf die Möglichkeit von ADHS hin. Es wird empfohlen, dass du eine professionelle Untersuchung in Betracht ziehst."
+        },
+        {
+          "maxScore": 15,
+          "result": "Sehr wahrscheinlich ADHS",
+          "explanation": "Die Antworten deuten stark auf das Vorliegen von ADHS hin. Eine umfassende Untersuchung durch einen Fachmann ist dringend zu empfehlen."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Hast du oft Schwierigkeiten, aufmerksam bei Aufgaben oder beim Spielen zu bleiben?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Fällt es dir schwer, bei Aufgaben oder Gesprächen konzentriert zu bleiben?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Vergisst du oft Dinge im Alltag (z. B. Termine, Aufgaben)?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Bist du häufig ungeduldig oder unaufmerksam in Gesprächen?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Verliert du oft den Fokus bei der Arbeit oder bei Aufgaben?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Bist du oft unorganisiert oder verlegst Dinge?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "Fällt es dir schwer, Dinge zu Ende zu bringen, die du begonnen hast?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Hast du oft das Gefühl, dass du in Ruhe arbeiten oder dich konzentrieren solltest, aber Schwierigkeiten hast, dies zu tun?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "Bist du leicht abgelenkt, auch bei wichtigen Aufgaben?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "Fühlst du dich oft von anderen Dingen abgelenkt, auch wenn du versuchst, dich auf etwas zu konzentrieren?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "Hast du Schwierigkeiten, ruhig zu bleiben oder bist du häufig in Bewegung?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "Fällt es dir schwer, dich in Gesprächen oder bei der Arbeit zu entspannen?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "Hast du Schwierigkeiten, Prioritäten zu setzen oder Entscheidungen zu treffen?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        },
+        {
+          "id": 14,
+          "text": "Hast du oft das Gefühl, dass du die Kontrolle über deine Gedanken und Handlungen verlierst?",
+          "inputType": "radio",
+          "answers": [
+            { "text": "Nie", "score": 0 },
+            { "text": "Selten", "score": 1 },
+            { "text": "Manchmal", "score": 2 },
+            { "text": "Oft", "score": 3 }
+          ]
+        }
       ]
     }
-    ]
-
-
+  ]
 }
