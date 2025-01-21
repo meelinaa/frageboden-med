@@ -17,17 +17,21 @@ Dieses Projekt bietet eine interaktive Webanwendung, die Selbstbeurteilungsfrage
 ## Screenshots
 
 1. **Home-Seite:** Übersicht der Anwendung und Navigation zu den Fragebögen.
-   <img src="/README-Images/Home.png" alt="Home-Seite" style="width: 100%; display: block;">
+
+<img src="/README-Images/Home.png" alt="Home-Seite" style="width: 100%; display: block;">
 
 2. **Info-Seite:** Details und Informationen über die Fragebögen.
-   <img src="/README-Images/Depression1.png" alt="Info-Seite" style="width: 50%; display: block;">
-      <img src="/README-Images/Adhs1.png" alt="Info-Seite" style="width: 50%; display: block;">
+
+<img src="/README-Images/Depression1.png" alt="Info-Seite" style="width: 50%; display: flex;">
+<img src="/README-Images/Adhs1.png" alt="Info-Seite" style="width: 50%; display: flex;">
 
 3. **Frageseite:** Darstellung einer Frage mit Fortschrittsanzeige und Antwortoptionen.
-   <img src="/README-Images/Test.png" alt="Frageseite" style="width: 100%; display: block;">
+
+<img src="/README-Images/Test.png" alt="Frageseite" style="width: 50%; display: block;">
 
 4. **Auswertungsseite:** Analyse der Antworten und Interpretation der Ergebnisse.
-   <img src="/README-Images/Auswertung.png" alt="Auswertung" style="width: 100%; display: block;">
+
+<img src="/README-Images/Auswertung.png" alt="Auswertung" style="width: 50%; display: block;">
 
 ---
 
