@@ -1,6 +1,6 @@
 # Selbstbeurteilungsfragebogen: Depression und ADHS 🧠
 
-<img src="/README-images/banner.png" alt="Beschreibung" style="width: 100%; display: block;">
+<img src="/README-Images/banner.png" alt="Beschreibung" style="width: 100%; display: block;">
 
 Dieses Projekt bietet eine interaktive Webanwendung, die Selbstbeurteilungsfragebögen zu den Themen **Depression** und **ADHS** enthält. Benutzer können die Fragen beantworten und erhalten eine Auswertung, die auf ihren Antworten basiert.
 
@@ -17,17 +17,17 @@ Dieses Projekt bietet eine interaktive Webanwendung, die Selbstbeurteilungsfrage
 ## Screenshots
 
 1. **Home-Seite:** Übersicht der Anwendung und Navigation zu den Fragebögen.
-   <img src="/README-images/Home.png" alt="Home-Seite" style="width: 100%; display: block;">
+   <img src="/README-Images/Home.png" alt="Home-Seite" style="width: 100%; display: block;">
 
 2. **Info-Seite:** Details und Informationen über die Fragebögen.
-   <img src="/README-images/Depression1.png" alt="Info-Seite" style="width: 50%; display: block;">
-      <img src="/README-images/Adhs1.png" alt="Info-Seite" style="width: 50%; display: block;">
+   <img src="/README-Images/Depression1.png" alt="Info-Seite" style="width: 50%; display: block;">
+      <img src="/README-Images/Adhs1.png" alt="Info-Seite" style="width: 50%; display: block;">
 
 3. **Frageseite:** Darstellung einer Frage mit Fortschrittsanzeige und Antwortoptionen.
-   <img src="/README-images/Test.png" alt="Frageseite" style="width: 100%; display: block;">
+   <img src="/README-Images/Test.png" alt="Frageseite" style="width: 100%; display: block;">
 
 4. **Auswertungsseite:** Analyse der Antworten und Interpretation der Ergebnisse.
-   <img src="/README-images/Auswertung.png" alt="Auswertung" style="width: 100%; display: block;">
+   <img src="/README-Images/Auswertung.png" alt="Auswertung" style="width: 100%; display: block;">
 
 ---
 
