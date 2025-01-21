@@ -117,8 +117,6 @@
 
 .questions-evaulation #count{
     border: 2px solid var(--blue-color);
-    padding: 0;
-    margin: 0;
     height: 80px;
     width: 80px;
     border-radius: 50px;
@@ -127,7 +125,9 @@
     box-sizing: border-box;
 }
 
-.questions-evaulation h1, .questions-evaulation p{
+.questions-evaulation h1, 
+.questions-evaulation p, 
+.questions-evaulation #count{
     padding: 0;
     margin: 0;
 }

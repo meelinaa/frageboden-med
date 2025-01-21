@@ -1,14 +1,33 @@
-# Selbstbeurteilungsfragebogen: Depression, ADHS und Burnout 🧠
+# Selbstbeurteilungsfragebogen: Depression und ADHS 🧠
 
-Dieses Projekt bietet eine interaktive Webanwendung, die Selbstbeurteilungsfragebögen zu den Themen **Depression**, **ADHS** und **Burnout** enthält. Benutzer können die Fragen beantworten und erhalten eine Auswertung, die auf ihren Antworten basiert.
+<img src="/README-images/banner.png" alt="Beschreibung" style="width: 100%; display: block;">
+
+Dieses Projekt bietet eine interaktive Webanwendung, die Selbstbeurteilungsfragebögen zu den Themen **Depression** und **ADHS** enthält. Benutzer können die Fragen beantworten und erhalten eine Auswertung, die auf ihren Antworten basiert.
 
 ## Features
 
-- **Selbstbeurteilungsfragebogen:** Enthält spezifische Fragen zu Depression, ADHS und Burnout.
-- **Auswertung:** Die Antworten der Benutzer werden analysiert, und es wird eine Bewertung der Schwere der Symptome angezeigt (z. B. keine Depression, leichte Symptome, schweres Burnout).
+- **Selbstbeurteilungsfragebogen:** Enthält spezifische Fragen zu Depression und ADHS.
+- **Auswertung:** Die Antworten der Benutzer werden analysiert, und es wird eine Bewertung der Schwere der Symptome angezeigt (z. B. keine Depression, leichte Symptome, hohe ADHS Wahrscheinlichkeit).
 - **Interaktive Oberfläche:** Benutzerfreundliches Design mit einfacher Navigation durch die Fragebögen.
 - **Fortschrittsanzeige:** Eine visuelle Anzeige, die den Fortschritt während der Bearbeitung darstellt.
 - **JSON-Daten:** Dynamisches Laden der Fragebögen und Ergebnisse über eine lokale JSON-API.
+
+---
+
+## Screenshots
+
+1. **Home-Seite:** Übersicht der Anwendung und Navigation zu den Fragebögen.
+   <img src="/README-images/Home.png" alt="Home-Seite" style="width: 100%; display: block;">
+
+2. **Info-Seite:** Details und Informationen über die Fragebögen.
+   <img src="/README-images/Depression1.png" alt="Info-Seite" style="width: 50%; display: block;">
+      <img src="/README-images/Adhs1.png" alt="Info-Seite" style="width: 50%; display: block;">
+
+3. **Frageseite:** Darstellung einer Frage mit Fortschrittsanzeige und Antwortoptionen.
+   <img src="/README-images/Test.png" alt="Frageseite" style="width: 100%; display: block;">
+
+4. **Auswertungsseite:** Analyse der Antworten und Interpretation der Ergebnisse.
+   <img src="/README-images/Auswertung.png" alt="Auswertung" style="width: 100%; display: block;">
 
 ---
 
@@ -80,7 +99,7 @@ Die Anwendung ist nun unter http://localhost:3000 verfügbar.
  ## Anwendung
 
 ### Fragebögen
-Navigieren Sie durch die verschiedenen Fragebögen (Depression, ADHS, Burnout). Jede Frage kann mit Radio-Buttons beantwortet werden.
+Navigieren Sie durch die verschiedenen Fragebögen (Depression, ADHS). Jede Frage kann mit Radio-Buttons beantwortet werden.
 
 ### Fortschrittsanzeige
 Sehen Sie jederzeit Ihren Fortschritt während der Bearbeitung.
