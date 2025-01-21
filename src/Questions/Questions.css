@@ -90,47 +90,56 @@
     align-items: center;
     gap: 8px;
 }
-
-.questions-evaulation {
-    background-color: var(--background-color);
+.questions-evaulation{
+    background-color: white;
     color: var(--blue-color);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%;             
+    left: 50%;            
+    transform: translate(-50%, -50%); 
     z-index: 1000;
+
+    box-sizing: border-box;
     padding: 30px 50px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height: fit-content;
     width: 700px;
+
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    text-align: center;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
+    gap: 30px;
 }
 
-.questions-evaulation #count {
+.questions-evaulation #count{
     border: 2px solid var(--blue-color);
+    padding: 0;
+    margin: 0;
     height: 80px;
     width: 80px;
-    border-radius: var(--border-radius);
-    font-size: var(--font-size-large);
-    line-height: 80px;
+    border-radius: 50px;
+    font-size: 40px;
+    padding-top: 8px;
+    box-sizing: border-box;
 }
 
-.questions-evaulation .buttonsDesign {
+.questions-evaulation h1, .questions-evaulation p{
+    padding: 0;
+    margin: 0;
+}
+
+.questions-evaulation .buttonsDesign{
     background-color: var(--blue-color);
     color: var(--text-color);
-    border: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.questions-evaulation .buttonsDesign:hover {
+.questions-evaulation .buttonsDesign:hover{
     background-color: var(--hover-blue);
+    color: var(--text-color);
 }
 
 .no {
