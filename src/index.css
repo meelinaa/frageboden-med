@@ -1,33 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-body{
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+:root {
+  --font-family: "Poppins", sans-serif;
+  --font-size: 18px;
+  --white-color: white;
+  --text-color: rgb(74, 74, 95);
+  --button-hover: rgb(246, 253, 255);
+  --button-active: rgb(179, 217, 227);
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 255, 255, 0.3);
+  --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url(Bilder/bg.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  color: var(--white-color);
+  background: url('Bilder/bg.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 
-.card{
+.card {
   box-sizing: border-box;
   padding: 30px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1); 
+  background: var(--card-bg);
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); 
-  border: 1px solid rgba(255, 255, 255, 0.3); 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 6px var(--card-shadow);
   height: 550px;
   width: 900px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -35,30 +43,33 @@ body{
   text-align: center;
 }
 
-.buttonsDesign{
-  background-color: white;
+.buttonsDesign {
+  background-color: var(--white-color);
   border: none;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   font-size: 20px;
   font-weight: bold;
   color: rgb(74, 74, 95);
   padding: 8px 16px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px var(--card-shadow);
   width: 200px;
   height: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.buttonsDesign:hover{
-  background-color: rgb(246, 253, 255);
+.buttonsDesign:hover {
+  background-color: var(--button-hover);
   cursor: pointer;
+  transform: translateY(2px);
 }
 
-.buttonsDesign:active{
-  background-color: rgb(204, 234, 242);
+.buttonsDesign:active {
+  background-color: var(--button-active);
+  transform: scale(0.98);
+  transform: translateY(5px);
 }
 
-
-.buttonsDesign:disabled{
+.buttonsDesign:disabled {
   display: none;
 }

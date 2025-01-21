@@ -1,68 +1,70 @@
-:root{
+:root {
     --blue-color: rgb(134, 179, 218);
+    --hover-blue: rgb(108, 173, 176);
+    --text-color: white;
+    --background-color: white;
+    --font-size-large: 40px;
+    --font-size-medium: 20px;
+    --border-radius: 50px;
 }
 
-.questions-top{
+.questions-top {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 16px;
     text-align: left;
     height: 100px;
-    gap: 16px;
 }
 
-.questions-top div{
+.questions-top div {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
 
-.questions-top p{
-    background-color: white;
+.questions-top p {
+    background-color: var(--background-color);
     color: var(--blue-color);
-    font-size: 40px;
-    padding: 0;
-    margin: 0;
+    font-size: var(--font-size-large);
     width: 130px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     text-align: center;
+    margin: 0;
+    line-height: 60px;
 }
 
-.questions-top h1{
-    padding: 0;
+.questions-top h1 {
     margin: 0;
     line-height: 35px;
-    align-self: center;
 }
 
-.progress-bar{
+.progress-bar {
     width: 100%;
     height: 15px;
-    background-color: white;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    padding: 5px;
     display: flex;
     align-items: center;
-    border-radius: 20px;
     overflow: hidden;
-    padding: 5px;
-    box-sizing: border-box;
 }
 
-.bar{
-    background-color: var(--blue-color) ;
+.bar {
+    background-color: var(--blue-color);
     width: 70%;
     height: 8px;
     border-radius: 20px;
-    height: '10px';
+    transition: width 0.5s ease;
 }
 
-.questions-answers{
-    text-align: left;
+.questions-answers {
     width: 100%;
+    text-align: left;
 }
 
-.questions-answers ul{
+.questions-answers ul {
     list-style-type: none;
     padding-left: 0;
     display: flex;
@@ -70,99 +72,79 @@
     gap: 12px;
 }
 
-input[type="radio"] {
+.questions-answers li {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    font-size: var(--font-size-medium);
+}
+
+.questions-answers input[type="radio"] {
     width: 20px;
     height: 20px;
-    border: none;
+    margin: 0;
 }
 
-.questions-answers ul li label{
+.questions-answers li label {
     display: flex;
     align-items: center;
-    gap:8px;
+    gap: 8px;
 }
 
-.questions-answers ul li{
-    height: 35px;
-    align-items: center;
-    display: flex;
-    font-size: 20px;
-}
-
-
-.questions-evaulation{
-    background-color: white;
+.questions-evaulation {
+    background-color: var(--background-color);
     color: var(--blue-color);
     position: absolute;
-    top: 50%;             
-    left: 50%;            
-    transform: translate(-50%, -50%); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1000;
-
-    box-sizing: border-box;
     padding: 30px 50px;
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    height: fit-content;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 700px;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
     gap: 30px;
+    text-align: center;
+    align-items: center;
 }
 
-.questions-evaulation #count{
+.questions-evaulation #count {
     border: 2px solid var(--blue-color);
-    padding: 0;
-    margin: 0;
     height: 80px;
     width: 80px;
-    border-radius: 50px;
-    font-size: 40px;
-    padding-top: 8px;
-    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-large);
+    line-height: 80px;
 }
 
-.questions-evaulation h1{
-    padding: 0;
-    margin: 0;
-}
-
-.questions-evaulation p{
-    padding: 0;
-    margin: 0;
-}
-
-.questions-evaulation .buttonsDesign{
+.questions-evaulation .buttonsDesign {
     background-color: var(--blue-color);
-    color: white;
+    color: var(--text-color);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.questions-evaulation .buttonsDesign:hover{
-    background-color: rgb(108, 173, 176);
-    color: white;
+.questions-evaulation .buttonsDesign:hover {
+    background-color: var(--hover-blue);
 }
 
 .no {
-    color: green; 
+    color: green;
 }
-
 .minimal {
-    color: yellow; 
+    color: yellow;
 }
-
 .mild {
-    color: orange; 
+    color: orange;
 }
-
 .moderate {
-    color: red; 
+    color: red;
 }
-
 .severe {
-    color: darkred; 
+    color: darkred;
 }
