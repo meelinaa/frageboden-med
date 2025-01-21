@@ -77,4 +77,25 @@ Die Anwendung ist nun unter http://localhost:3000 verfügbar.
 
  ---
 
- 
+ ## Anwendung
+
+### Fragebögen
+Navigieren Sie durch die verschiedenen Fragebögen (Depression, ADHS, Burnout). Jede Frage kann mit Radio-Buttons beantwortet werden.
+
+### Fortschrittsanzeige
+Sehen Sie jederzeit Ihren Fortschritt während der Bearbeitung.
+
+### Auswertung
+Am Ende des Fragebogens erhalten Sie eine Analyse, die Ihre Antworten interpretiert und die Schwere der Symptome darstellt.
+
+---
+
+## Lizenz
+
+Dieses Projekt steht unter der [MIT-Lizenz](LICENSE). Sie können den Quellcode frei verwenden, ändern und weitergeben.
+
+---
+
+## Kontakt
+
+Für Fragen oder Feedback kontaktieren Sie mich über [E-Mail](mailto:melinakiefer@hotmail.de) oder GitHub. Ich freue mich auf Ihre Rückmeldung!
