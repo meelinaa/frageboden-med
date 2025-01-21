@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
 export default function Questions() {
     const location = useLocation();
     const navigate = useNavigate();
     const questionnaire = location.state?.questionnaire;
-    
+
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    const currentQuestion = questionnaire.questions[currentQuestionIndex];
     const [selectedAnswer, setSelectedAnswer] = useState(null);  
     const [count, setCount] = useState(0);
 
@@ -21,29 +22,21 @@ export default function Questions() {
         return <div>Loading...</div>; 
     };
 
-    const currentQuestion = questionnaire.questions[currentQuestionIndex];
-
     const handleAnswerChange = (event) => {
         setSelectedAnswer(parseInt(event.target.value)); 
-    };
-
-    const handleBack = () => {
-        setCount(count - selectedAnswer);
-        setSelectedAnswer(null);
-        setCurrentQuestionIndex(currentQuestionIndex - 1);
     };
 
     const handleNext = () => {
         if (selectedAnswer != null) {
             setCount(count + selectedAnswer);
             setSelectedAnswer(null);
-            setProgress(progress + (100/questionnaire.questions.length));  // Dynamische Berechnung
+            setProgress(progress + (100/questionnaire.questions.length)); 
             setCurrentQuestionIndex(currentQuestionIndex + 1);
         }
     };
 
     const handleEvaluation = () => {
-        if (questionnaire.id === 1) {
+        if (questionnaire.id == 1) {
             if (count <= 8) {
                 setResult("Keine Depression");
                 setResultLong("Deine Antworten zeigen keine signifikanten Symptome einer Depression. Es könnte jedoch hilfreich sein, achtsam zu bleiben, falls sich die Symptome in der Zukunft ändern.");
@@ -67,7 +60,7 @@ export default function Questions() {
             }
         }
     
-        else if (questionnaire.id === 2) {
+        else if (questionnaire.id == 2) {
             if (count <= 8) {
                 setResult("Keine ADHS");
                 setResultLong("Die Symptome deuten darauf hin, dass keine ADHS vorliegt. Es könnte hilfreich sein, weiterhin achtsam zu bleiben.");
@@ -113,12 +106,7 @@ export default function Questions() {
                 
                 <div className="questions-top">
                     <div className="progress-bar">
-                        <div className="bar"
-                        style={{ 
-                            width: `${progress}%`,
-                            transition: 'width 0.5s ease'
-                        }}>
-                        </div>
+                        <div className="bar" style={{ width: `${progress}%`, transition: 'width 0.5s ease'}}> </div>
                     </div>
                     <div>
                         <h1>{currentQuestion.text}</h1>
@@ -146,7 +134,6 @@ export default function Questions() {
                 </div>
 
                 <div className="questions-bottom">
-                    {/*<button className="buttonsDesign" onClick={handleBack} disabled={currentQuestionIndex === 0}>Zurück</button>*/}
                     <button className="buttonsDesign" onClick={handleNext} disabled={currentQuestionIndex === questionnaire.questions.length - 1} >Weiter</button>
                     <button className="buttonsDesign" onClick={handleEvaluation} disabled={currentQuestionIndex < questionnaire.questions.length - 1}>Auswertung</button>
                 </div>

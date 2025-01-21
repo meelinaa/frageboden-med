@@ -52,7 +52,7 @@ Dieses Projekt wurde von Grund auf selbst entwickelt und enthält:
 ### 1. Projekt klonen
 Klonen Sie das Repository auf Ihre lokale Maschine:
 ```bash
-    git clone <repository-url>
+    git clone https://github.com/meelinaa/frageboden-med.git
     cd fragebogen-med
 ```
 

@@ -1,7 +1,8 @@
 import React from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function Questionaires() {
+    
     const location = useLocation();
     const navigate = useNavigate();
     const questionnaire = location.state?.questionnaire;
@@ -21,4 +22,5 @@ export default function Questionaires() {
             <button className="buttonsDesign" onClick={() => startQuestions(questionnaire)}>Start</button>
         </div>
     );
+
 }

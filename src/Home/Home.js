@@ -3,6 +3,7 @@ import useDataFetch from '../DataFetch/useDataFetch';
 import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+    
     const { data, error, loading } = useDataFetch();
     const navigate = useNavigate();
 
@@ -15,7 +16,6 @@ export default function Home() {
 
     if (error) return <div>Error: {error}</div>;
     
-
     return (
         <div className='card'>
             <div className="home-top">
