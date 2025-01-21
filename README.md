@@ -1,37 +1,80 @@
-# Depression, ADHS und Burnout Selbstbeurteilungsfragebogen
+# Selbstbeurteilungsfragebogen: Depression, ADHS und Burnout 🧠
 
-Dies ist ein Webprojekt, das verschiedene Selbstbeurteilungsfragebögen zur Erkennung von **Depression**, **ADHS** und **Burnout** enthält. Die Benutzer können die Fragen ausfüllen und erhalten eine Auswertung basierend auf ihren Antworten. 
+Dieses Projekt bietet eine interaktive Webanwendung, die Selbstbeurteilungsfragebögen zu den Themen **Depression**, **ADHS** und **Burnout** enthält. Benutzer können die Fragen beantworten und erhalten eine Auswertung, die auf ihren Antworten basiert.
 
 ## Features
-- **Selbstbeurteilungsfragebogen**: Der Fragebogen enthält Fragen zu den Themen Depression, ADHS und Burnout.
-- **Evaluierung**: Basierend auf den Antworten der Benutzer wird eine Auswertung bereitgestellt, die die Schwere der Symptome angibt (z.B. keine Depression, minimale Depression, schwere ADHS).
-- **Interaktive Benutzeroberfläche**: Die Benutzer können die Fragen durchgehen und ihre Antworten auswählen. Am Ende wird ihnen eine detaillierte Auswertung angezeigt.
-- **Progress-Bar**: Während der Beantwortung der Fragen wird der Fortschritt visuell dargestellt.
+
+- **Selbstbeurteilungsfragebogen:** Enthält spezifische Fragen zu Depression, ADHS und Burnout.
+- **Auswertung:** Die Antworten der Benutzer werden analysiert, und es wird eine Bewertung der Schwere der Symptome angezeigt (z. B. keine Depression, leichte Symptome, schweres Burnout).
+- **Interaktive Oberfläche:** Benutzerfreundliches Design mit einfacher Navigation durch die Fragebögen.
+- **Fortschrittsanzeige:** Eine visuelle Anzeige, die den Fortschritt während der Bearbeitung darstellt.
+- **JSON-Daten:** Dynamisches Laden der Fragebögen und Ergebnisse über eine lokale JSON-API.
+
+---
+
+## Projektstruktur
+
+- **Frontend:** 
+  - React für die dynamische und reaktionsschnelle Benutzeroberfläche.
+- **State Management:** 
+  - Verwaltung des Anwendungszustands mit React Hooks (`useState`, `useEffect`).
+- **Styling:** 
+  - Nutzung von CSS für eine klare und ansprechende Gestaltung.
+- **Routing:** 
+  - Navigation zwischen Fragebögen und Ergebnissen mit React Router.
+- **JSON-API:** 
+  - Lokale API unter `http://localhost:8000/questionnaires` für Fragebogendaten.
+
+---
 
 ## Technologien
-- **React**: Für die Erstellung der Benutzeroberfläche und das Handling der Logik.
-- **CSS**: Für das Styling und die visuelle Gestaltung.
-- **React Router**: Zur Navigation zwischen den verschiedenen Fragen und Auswertungsseiten.
-- **State Management**: Nutzung von React Hooks (`useState`, `useEffect`) für die Verwaltung des Zustands.
 
-## Setup
+- ⚛️ **Frontend:** React (JavaScript ES6+, HTML, CSS)  
+  Entwickelt für eine interaktive und reaktionsschnelle Benutzererfahrung.
+- 🗄️ **Daten:** JSON-Daten, bereitgestellt über einen JSON-Server.
+- 🌐 **Routing:** React Router für einfache Navigation.
+- 🎨 **Design:** Fortschrittsanzeige und intuitive Darstellung der Ergebnisse.
+
+---
+
+## Software-Entwicklung und Planung
+
+Dieses Projekt wurde von Grund auf selbst entwickelt und enthält:
+
+- **Planung und Architektur:** Aufbau der Benutzeroberfläche und Implementierung der Anwendungslogik.
+- **Agile Entwicklung:** Iterative Umsetzung der Funktionen mit einem klaren Fokus auf Benutzerfreundlichkeit.
+- **Lernfokus:** Ziel des Projekts war es, fortgeschrittene Konzepte in React zu vertiefen, darunter State Management, Routing und API-Integration.
+
+---
+
+## Lokale Installation und Ausführung
 
 ### 1. Projekt klonen
 Klonen Sie das Repository auf Ihre lokale Maschine:
-git clone <repository-url>
+```bash
+    git clone <repository-url>
+    cd fragebogen-med
+```
 
 ### 2. Abhängigkeiten installieren
-Navigieren Sie in das Projektverzeichnis und installieren Sie alle benötigten Abhängigkeiten:
-cd <fragebogen-med>
-npm install
+Installieren Sie alle benötigten Abhängigkeiten:
+```bash
+    npm install
+```
 
-### 3. Projekt starten
-Starten Sie das Projekt lokal:
-npm start
+### 3. JSON-Server starten
+Starten Sie den JSON-Server, um die Fragebogendaten bereitzustellen:
+```bash
+    npx json-server --watch fragebogen\fragebogen.json --port 8000
+```
 
-Das Projekt läuft nun auf http://localhost:3000.
+### 4. Projekt starten
+Starten Sie die React-Anwendung:
+```bash
+    npm start
+```
+Die Anwendung ist nun unter http://localhost:3000 verfügbar.
 
-## Anwendung
+ ---
 
-- **Fragebögen**: Der Benutzer kann durch verschiedene Fragebögen navigieren. Jeder Fragebogen (z.B. Depression, ADHS) enthält Fragen, die anhand von Radio-Buttons beantwortet werden können.
-- **Auswertung**: 
+ 
